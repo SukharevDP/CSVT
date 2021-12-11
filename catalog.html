@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Catalog</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="https://csvt.ru/upload/CAllcorp3/6fd/ir90mnc917s0qturlde6a62utsu385u6.png" height="30"></a>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Главная</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Каталог</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Все</a></li>
+              <li><a class="dropdown-item" href="#">Офисно-административные</a></li>
+              <li><a class="dropdown-item" href="#">Для медицинских помещений</a></li>
+              <li><a class="dropdown-item" href="#">Для образовтельных помещений</a></li>
+              <li><a class="dropdown-item" href="#">Для ритейла</a></li>
+              <li><a class="dropdown-item" href="#">Для чистых помещений</a></li>
+              <li><a class="dropdown-item" href="#">Промышленные</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Оплата и получение</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Контакты</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control form-control-sm rounded-pill" type="search" placeholder="Поиск" aria-label="Поиск">
+          <button class="btn btn-outline-light btn-sm rounded-pill" type="submit"><i class="bi bi-search"></i></button>
+        </form>
+    </div>
+  </nav>
+  <nav aria-label="breadcrumb">
+   <div class="container">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Главная</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Каталог</li>
+    </ol>
+   </div>
+ </nav>
+ <div class="container">
+   <h2 class="text-center">Каталог светильников CSVT</h2><br>
+ </div>
+  <div class="container">
+  <ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active text-dark" id="all-tab" data-bs-toggle="tab" data-bs-target="#all" type="button" role="tab" aria-controls="all" aria-selected="true"><strong>Все </strong><span class="badge rounded-pill badge bg-primary">17</span></button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link text-dark" id="office-tab" data-bs-toggle="tab" data-bs-target="#office" type="button" role="tab" aria-controls="office" aria-selected="false"><strong>Офисные </strong><span class="badge rounded-pill badge bg-primary">12</span></button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link text-dark" id="medical-tab" data-bs-toggle="tab" data-bs-target="#medical" type="button" role="tab" aria-controls="medical" aria-selected="false"><strong>Для медицины </strong><span class="badge rounded-pill badge bg-primary">5</span></button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link text-dark" id="edu-tab" data-bs-toggle="tab" data-bs-target="#edu" type="button" role="tab" aria-controls="edu" aria-selected="false"><strong>Для образования </strong><span class="badge rounded-pill badge bg-primary">4</span></button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link text-dark" id="retail-tab" data-bs-toggle="tab" data-bs-target="#retail" type="button" role="tab" aria-controls="retail" aria-selected="false"><strong>Для ритейла </strong><span class="badge rounded-pill badge bg-primary">11</span></button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link text-dark" id="clean-tab" data-bs-toggle="tab" data-bs-target="#clean" type="button" role="tab" aria-controls="clean" aria-selected="false"><strong>Для чистых помещений </strong><span class="badge rounded-pill badge bg-primary">4</span></button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link text-dark" id="industry-tab" data-bs-toggle="tab" data-bs-target="#industry" type="button" role="tab" aria-controls="industry" aria-selected="false"><strong>Промышленные </strong><span class="badge rounded-pill badge bg-primary">5</span></button>
+    </li>
+  </ul>
+  </div>
+  <div class="container tab-content p-4" id="myTabContent">
+    <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
+      <div class="row">
+        <div class="card img-fluid col-sx-12 col-sm-9 col-md-3 col-lg-2 border-0">
+            <img class="card-img-top" src="https://csvt.ru/upload/iblock/64f/o1frc9q41vyi0l8a5jw73wgdz5mopj02.jpg" alt="">
+            <div class="card-img-overlay"><div class="position-absolute bottom-0 start-50 translate-middle-x">AVRORA</div></div>
+        </div>
+        <div class="card img-fluid col-sx-12 col-sm-9 col-md-3 col-lg-2 border-0">
+            <img class="card-img-top" src="https://csvt.ru/upload/iblock/c1e/6e850pf5tfngntrrphuzem3mzyvvodp3.jpg" alt="">
+            <div class="card-img-overlay"><div class="position-absolute bottom-0 start-50 translate-middle-x">HIGHTECH</div></div>
+        </div>
+        <div class="card img-fluid col-sx-12 col-sm-9 col-md-3 col-lg-2 border-0">
+            <img class="card-img-top" src="https://csvt.ru/upload/iblock/82e/117codewklq0du0derwbq8jdi6r4is62.jpg" alt="">
+            <div class="card-img-overlay"><div class="position-absolute bottom-0 start-50 translate-middle-x">UNIVERSAL</div></div>
+        </div>
+        <div class="card img-fluid col-sx-12 col-sm-9 col-md-3 col-lg-2 border-0">
+            <img class="card-img-top" src="https://csvt.ru/upload/iblock/96d/1fcsd0pzukovy1hjfh8dl231gqwtrtr7.jpg" alt="">
+            <div class="card-img-overlay"><div class="position-absolute bottom-0 start-50 translate-middle-x">OPERLUX</div></div>
+        </div>
+        <div class="card img-fluid col-sx-12 col-sm-9 col-md-3 col-lg-2 border-0">
+          <img class="card-img-top" src="https://csvt.ru/upload/iblock/4a3/9m6li88qhocg53w7wvadbjq005c34mv7.jpg" alt="">
+          <div class="card-img-overlay"><div class="position-absolute bottom-0 start-50 translate-middle-x">SPARTA</div></div>
+        </div>
+        <div class="card img-fluid col-sx-12 col-sm-9 col-md-3 col-lg-2 border-0">
+            <img class="card-img-top" src="https://csvt.ru/upload/iblock/08c/8sk9qmpmgnxoffqyt07gm71m2yo45cez.jpg" alt="">
+            <div class="card-img-overlay"><div class="position-absolute bottom-0 start-50 translate-middle-x">KROKUS</div></div>
+        </div>
+        <div class="card img-fluid col-sx-12 col-sm-9 col-md-3 col-lg-2 border-0">
+            <img class="card-img-top" src="https://csvt.ru/upload/iblock/8f0/x7p893bff738a9t2am8nws20xykqye22.jpg" alt="">
+            <div class="card-img-overlay"><div class="position-absolute bottom-0 start-50 translate-middle-x">FLORA</div></div>
+        </div>
+        <div class="card img-fluid col-sx-12 col-sm-9 col-md-3 col-lg-2 border-0">
+            <img class="card-img-top" src="https://csvt.ru/upload/iblock/68a/von5zl4rrdr50nnu4bgi8gbr6cl9i0bm.jpg" alt="">
+            <div class="card-img-overlay"><div class="position-absolute bottom-0 start-50 translate-middle-x">FLORA/100</div></div>
+        </div>
+        <div class="card img-fluid col-sx-12 col-sm-9 col-md-3 col-lg-2 border-0">
+            <img class="card-img-top" src="https://csvt.ru/upload/iblock/8b7/a9iqv2ujz6kcy4wbmg3jwz7cucsz45hf.jpg" alt="">
+            <div class="card-img-overlay"><div class="position-absolute bottom-0 start-50 translate-middle-x">LIRA</div></div>
+        </div>
+        <div class="card img-fluid col-sx-12 col-sm-9 col-md-3 col-lg-2 border-0">
+            <img class="card-img-top" src="https://csvt.ru/upload/iblock/8b7/a9iqv2ujz6kcy4wbmg3jwz7cucsz45hf.jpg" alt="">
+            <div class="card-img-overlay"><div class="position-absolute bottom-0 start-50 translate-middle-x">PR</div></div>
+        </div>
+        <div class="card img-fluid col-sx-12 col-sm-9 col-md-3 col-lg-2 border-0">
+            <img class="card-img-top" src="https://csvt.ru/upload/iblock/f3f/plxm5bb0rw2to2qsecn7ar1cieupl3k9.jpg" alt="">
+            <div class="card-img-overlay"><div class="position-absolute bottom-0 start-50 translate-middle-x">ICEBERG</div></div>
+        </div>
+        <div class="card img-fluid col-sx-12 col-sm-9 col-md-3 col-lg-2 border-0">
+            <img class="card-img-top" src="https://csvt.ru/upload/iblock/a80/pmnfv69swc2kfj602ps3axqvyvw6wupr.jpg" alt="">
+            <div class="card-img-overlay"><div class="position-absolute bottom-0 start-50 translate-middle-x">SLIM</div></div>
+        </div>
+        <div class="card img-fluid col-sx-12 col-sm-9 col-md-3 col-lg-2 border-0">
+            <img class="card-img-top" src="https://csvt.ru/upload/iblock/a80/pmnfv69swc2kfj602ps3axqvyvw6wupr.jpg" alt="">
+            <div class="card-img-overlay"><div class="position-absolute bottom-0 start-50 translate-middle-x">SLIM/TUBE</div></div>
+        </div>
+        <div class="card img-fluid col-sx-12 col-sm-9 col-md-3 col-lg-2 border-0">
+            <img class="card-img-top" src="https://csvt.ru/upload/iblock/e92/21gbifke3p1jku3xuzhcafacaae8t20h.jpg" alt="">
+            <div class="card-img-overlay"><div class="position-absolute bottom-0 start-50 translate-middle-x">VOLGA/EU</div></div>
+        </div>
+        <div class="card img-fluid col-sx-12 col-sm-9 col-md-3 col-lg-2 border-0">
+            <img class="card-img-top" src="https://csvt.ru/upload/iblock/c03/8iphq6lg5nixx6tfr3o141gnz0meur7d.jpg" alt="">
+            <div class="card-img-overlay"><div class="position-absolute bottom-0 start-50 translate-middle-x">VOLGA/IP20</div></div>
+        </div>
+        <div class="card img-fluid col-sx-12 col-sm-9 col-md-3 col-lg-2 border-0">
+            <img class="card-img-top" src="https://csvt.ru/upload/iblock/8d9/tk8vbz6p4x6pvn23x5nt1tbpkdznuono.jpg" alt="">
+            <div class="card-img-overlay"><div class="position-absolute bottom-0 start-50 translate-middle-x">VOLGA/IP20/PL</div></div>
+        </div>
+        <div class="card img-fluid col-sx-12 col-sm-9 col-md-3 col-lg-2 border-0">
+            <img class="card-img-top" src="https://csvt.ru/upload/iblock/49f/f5mh1usevm6n6n5fzejnhe40qbu8fdnk.jpg" alt="">
+            <div class="card-img-overlay"><div class="position-absolute bottom-0 start-50 translate-middle-x">VOLGA/PL</div></div>
+        </div>
+      </div>
+      </div>
+    <div class="tab-pane fade" id="office" role="tabpanel" aria-labelledby="office-tab">
+      <div class="row">
+        <div class="card img-fluid col-sx-12 col-sm-9 col-md-6 col-lg-2 border-0">
+            <img class="card-img-top" src="https://csvt.ru/upload/iblock/64f/o1frc9q41vyi0l8a5jw73wgdz5mopj02.jpg" alt="">
+            <div class="card-img-overlay text-center"><div class="position-absolute bottom-0 start-50 translate-middle-x">AVRORA</div></div>
+        </div>
+        <div class="card img-fluid col-sx-12 col-sm-9 col-md-6 col-lg-2 border-0">
+            <img class="card-img-top" src="https://csvt.ru/upload/iblock/c1e/6e850pf5tfngntrrphuzem3mzyvvodp3.jpg" alt="">
+            <div class="card-img-overlay text-center"><div class="position-absolute bottom-0 start-50 translate-middle-x">HIGHTECH</div></div>
+        </div>
+        <div class="card img-fluid col-sx-12 col-sm-9 col-md-6 col-lg-2 border-0">
+            <img class="card-img-top" src="https://csvt.ru/upload/iblock/82e/117codewklq0du0derwbq8jdi6r4is62.jpg" alt="">
+            <div class="card-img-overlay text-center"><div class="position-absolute bottom-0 start-50 translate-middle-x">UNIVERSAL</div></div>
+        </div>
+        <div class="card img-fluid col-sx-12 col-sm-9 col-md-6 col-lg-2 border-0">
+            <img class="card-img-top" src="https://csvt.ru/upload/iblock/96d/1fcsd0pzukovy1hjfh8dl231gqwtrtr7.jpg" alt="">
+            <div class="card-img-overlay text-center"><div class="position-absolute bottom-0 start-50 translate-middle-x">OPERLUX</div></div>
+        </div>
+        <div class="card img-fluid col-sx-12 col-sm-9 col-md-6 col-lg-2 border-0">
+          <img class="card-img-top" src="https://csvt.ru/upload/iblock/4a3/9m6li88qhocg53w7wvadbjq005c34mv7.jpg" alt="">
+          <div class="card-img-overlay text-center"><div class="position-absolute bottom-0 start-50 translate-middle-x">SPARTA</div></div>
+        </div>
+        <div class="card img-fluid col-sx-12 col-sm-9 col-md-6 col-lg-2 border-0">
+            <img class="card-img-top" src="https://csvt.ru/upload/iblock/08c/8sk9qmpmgnxoffqyt07gm71m2yo45cez.jpg" alt="">
+            <div class="card-img-overlay text-center"><div class="position-absolute bottom-0 start-50 translate-middle-x">KROKUS</div></div>
+        </div>
+        <div class="card img-fluid col-sx-12 col-sm-9 col-md-6 col-lg-2 border-0">
+            <img class="card-img-top" src="https://csvt.ru/upload/iblock/8f0/x7p893bff738a9t2am8nws20xykqye22.jpg" alt="">
+            <div class="card-img-overlay text-center"><div class="position-absolute bottom-0 start-50 translate-middle-x">FLORA</div></div>
+        </div>
+        <div class="card img-fluid col-sx-12 col-sm-9 col-md-6 col-lg-2 border-0">
+            <img class="card-img-top" src="https://csvt.ru/upload/iblock/68a/von5zl4rrdr50nnu4bgi8gbr6cl9i0bm.jpg" alt="">
+            <div class="card-img-overlay text-center"><div class="position-absolute bottom-0 start-50 translate-middle-x">FLORA/100</div></div>
+        </div>
+        <div class="card img-fluid col-sx-12 col-sm-9 col-md-6 col-lg-2 border-0">
+            <img class="card-img-top" src="https://csvt.ru/upload/iblock/e92/21gbifke3p1jku3xuzhcafacaae8t20h.jpg" alt="">
+            <div class="card-img-overlay text-center"><div class="position-absolute bottom-0 start-50 translate-middle-x">VOLGA/EU</div></div>
+        </div>
+       <div class="card img-fluid col-sx-12 col-sm-9 col-md-6 col-lg-2 border-0">
+            <img class="card-img-top" src="https://csvt.ru/upload/iblock/c03/8iphq6lg5nixx6tfr3o141gnz0meur7d.jpg" alt="">
+            <div class="card-img-overlay text-center"><div class="position-absolute bottom-0 start-50 translate-middle-x">VOLGA/IP20</div></div>
+        </div>
+        <div class="card img-fluid col-sx-12 col-sm-9 col-md-6 col-lg-2 border-0">
+            <img class="card-img-top" src="https://csvt.ru/upload/iblock/8d9/tk8vbz6p4x6pvn23x5nt1tbpkdznuono.jpg" alt="">
+            <div class="card-img-overlay text-center"><div class="position-absolute bottom-0 start-50 translate-middle-x">VOLGA/IP20/PL</div></div>
+        </div>
+        <div class="card img-fluid col-sx-12 col-sm-9 col-md-6 col-lg-2 border-0">
+            <img class="card-img-top" src="https://csvt.ru/upload/iblock/49f/f5mh1usevm6n6n5fzejnhe40qbu8fdnk.jpg" alt="">
+            <div class="card-img-overlay text-center"><div class="position-absolute bottom-0 start-50 translate-middle-x">VOLGA/PL</div></div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="medical" role="tabpanel" aria-labelledby="medical-tab">
+      <div class="row">
+          <div class="card img-fluid col-sx-12 col-sm-9 col-md-6 col-lg-2 border-0">
+              <img class="card-img-top" src="https://csvt.ru/upload/iblock/64f/o1frc9q41vyi0l8a5jw73wgdz5mopj02.jpg" alt="">
+              <div class="card-img-overlay text-center"><div class="position-absolute bottom-0 start-50 translate-middle-x">AVRORA</div></div>
+          </div>
+          <div class="card img-fluid col-sx-12 col-sm-9 col-md-6 col-lg-2 border-0">
+              <img class="card-img-top" src="https://csvt.ru/upload/iblock/c1e/6e850pf5tfngntrrphuzem3mzyvvodp3.jpg" alt="">
+              <div class="card-img-overlay text-center"><div class="position-absolute bottom-0 start-50 translate-middle-x">HIGHTECH</div></div>
+          </div>
+          <div class="card img-fluid col-sx-12 col-sm-9 col-md-6 col-lg-2 border-0">
+              <img class="card-img-top" src="https://csvt.ru/upload/iblock/82e/117codewklq0du0derwbq8jdi6r4is62.jpg" alt="">
+              <div class="card-img-overlay text-center"><div class="position-absolute bottom-0 start-50 translate-middle-x">UNIVERSAL</div></div>
+          </div>
+          <div class="card img-fluid col-sx-12 col-sm-9 col-md-6 col-lg-2 border-0">
+            <img class="card-img-top" src="https://csvt.ru/upload/iblock/4a3/9m6li88qhocg53w7wvadbjq005c34mv7.jpg" alt="">
+            <div class="card-img-overlay text-center"><div class="position-absolute bottom-0 start-50 translate-middle-x">SPARTA</div></div>
+          </div>
+          <div class="card img-fluid col-sx-12 col-sm-9 col-md-6 col-lg-2 border-0">
+              <img class="card-img-top" src="https://csvt.ru/upload/iblock/08c/8sk9qmpmgnxoffqyt07gm71m2yo45cez.jpg" alt="">
+              <div class="card-img-overlay text-center"><div class="position-absolute bottom-0 start-50 translate-middle-x">KROKUS</div></div>
+          </div>
+        </div>
+      </div>
+    <div class="tab-pane fade" id="edu" role="tabpanel" aria-labelledby="edu">
+      <div class="row">
+        <div class="card img-fluid col-sx-12 col-sm-9 col-md-6 col-lg-2 border-0">
+            <img class="card-img-top" src="https://csvt.ru/upload/iblock/64f/o1frc9q41vyi0l8a5jw73wgdz5mopj02.jpg" alt="">
+            <div class="card-img-overlay text-center"><div class="position-absolute bottom-0 start-50 translate-middle-x">AVRORA</div></div>
+        </div>
+        <div class="card img-fluid col-sx-12 col-sm-9 col-md-6 col-lg-2 border-0">
+            <img class="card-img-top" src="https://csvt.ru/upload/iblock/c1e/6e850pf5tfngntrrphuzem3mzyvvodp3.jpg" alt="">
+            <div class="card-img-overlay text-center"><div class="position-absolute bottom-0 start-50 translate-middle-x">HIGHTECH</div></div>
+        </div>
+        <div class="card img-fluid col-sx-12 col-sm-9 col-md-6 col-lg-2 border-0">
+            <img class="card-img-top" src="https://csvt.ru/upload/iblock/82e/117codewklq0du0derwbq8jdi6r4is62.jpg" alt="">
+            <div class="card-img-overlay text-center"><div class="position-absolute bottom-0 start-50 translate-middle-x">UNIVERSAL</div></div>
+        </div>
+        <div class="card img-fluid col-sx-12 col-sm-9 col-md-6 col-lg-2 border-0">
+          <img class="card-img-top" src="https://csvt.ru/upload/iblock/4a3/9m6li88qhocg53w7wvadbjq005c34mv7.jpg" alt="">
+          <div class="card-img-overlay text-center"><div class="position-absolute bottom-0 start-50 translate-middle-x">SPARTA</div></div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="retail" role="tabpanel" aria-labelledby="retail">
+      <div class="row">
+      <div class="card img-fluid col-sx-12 col-sm-9 col-md-6 col-lg-2 border-0">
+          <img class="card-img-top" src="https://csvt.ru/upload/iblock/64f/o1frc9q41vyi0l8a5jw73wgdz5mopj02.jpg" alt="">
+          <div class="card-img-overlay text-center"><div class="position-absolute bottom-0 start-50 translate-middle-x">AVRORA</div></div>
+      </div>
+      <div class="card img-fluid col-sx-12 col-sm-9 col-md-6 col-lg-2 border-0">
+          <img class="card-img-top" src="https://csvt.ru/upload/iblock/c1e/6e850pf5tfngntrrphuzem3mzyvvodp3.jpg" alt="">
+          <div class="card-img-overlay text-center"><div class="position-absolute bottom-0 start-50 translate-middle-x">HIGHTECH</div></div>
+      </div>
+      <div class="card img-fluid col-sx-12 col-sm-9 col-md-6 col-lg-2 border-0">
+          <img class="card-img-top" src="https://csvt.ru/upload/iblock/82e/117codewklq0du0derwbq8jdi6r4is62.jpg" alt="">
+          <div class="card-img-overlay text-center"><div class="position-absolute bottom-0 start-50 translate-middle-x">UNIVERSAL</div></div>
+      </div>
+      <div class="card img-fluid col-sx-12 col-sm-9 col-md-6 col-lg-2 border-0">
+        <img class="card-img-top" src="https://csvt.ru/upload/iblock/4a3/9m6li88qhocg53w7wvadbjq005c34mv7.jpg" alt="">
+        <div class="card-img-overlay text-center"><div class="position-absolute bottom-0 start-50 translate-middle-x">SPARTA</div></div>
+      </div>
+      <div class="card img-fluid col-sx-12 col-sm-9 col-md-6 col-lg-2 border-0">
+          <img class="card-img-top" src="https://csvt.ru/upload/iblock/08c/8sk9qmpmgnxoffqyt07gm71m2yo45cez.jpg" alt="">
+          <div class="card-img-overlay text-center"><div class="position-absolute bottom-0 start-50 translate-middle-x">KROKUS</div></div>
+      </div>
+      <div class="card img-fluid col-sx-12 col-sm-9 col-md-6 col-lg-2 border-0">
+          <img class="card-img-top" src="https://csvt.ru/upload/iblock/8f0/x7p893bff738a9t2am8nws20xykqye22.jpg" alt="">
+          <div class="card-img-overlay text-center"><div class="position-absolute bottom-0 start-50 translate-middle-x">FLORA</div></div>
+      </div>
+      <div class="card img-fluid col-sx-12 col-sm-9 col-md-6 col-lg-2 border-0">
+          <img class="card-img-top" src="https://csvt.ru/upload/iblock/68a/von5zl4rrdr50nnu4bgi8gbr6cl9i0bm.jpg" alt="">
+          <div class="card-img-overlay text-center"><div class="position-absolute bottom-0 start-50 translate-middle-x">FLORA/100</div></div>
+      </div>
+      <div class="card img-fluid col-sx-12 col-sm-9 col-md-6 col-lg-2 border-0">
+          <img class="card-img-top" src="https://csvt.ru/upload/iblock/e92/21gbifke3p1jku3xuzhcafacaae8t20h.jpg" alt="">
+          <div class="card-img-overlay text-center"><div class="position-absolute bottom-0 start-50 translate-middle-x">VOLGA/EU</div></div>
+      </div>
+     <div class="card img-fluid col-sx-12 col-sm-9 col-md-6 col-lg-2 border-0">
+          <img class="card-img-top" src="https://csvt.ru/upload/iblock/c03/8iphq6lg5nixx6tfr3o141gnz0meur7d.jpg" alt="">
+          <div class="card-img-overlay text-center"><div class="position-absolute bottom-0 start-50 translate-middle-x">VOLGA/IP20</div></div>
+      </div>
+      <div class="card img-fluid col-sx-12 col-sm-9 col-md-6 col-lg-2 border-0">
+          <img class="card-img-top" src="https://csvt.ru/upload/iblock/8d9/tk8vbz6p4x6pvn23x5nt1tbpkdznuono.jpg" alt="">
+          <div class="card-img-overlay text-center"><div class="position-absolute bottom-0 start-50 translate-middle-x">VOLGA/IP20/PL</div></div>
+      </div>
+      <div class="card img-fluid col-sx-12 col-sm-9 col-md-6 col-lg-2 border-0">
+          <img class="card-img-top" src="https://csvt.ru/upload/iblock/49f/f5mh1usevm6n6n5fzejnhe40qbu8fdnk.jpg" alt="">
+          <div class="card-img-overlay text-center"><div class="position-absolute bottom-0 start-50 translate-middle-x">VOLGA/PL</div></div>
+      </div>
+    </div>
+  </div>
+    <div class="tab-pane fade" id="clean" role="tabpanel" aria-labelledby="clean">
+      <div class="row">
+        <div class="card img-fluid col-sx-12 col-sm-9 col-md-6 col-lg-2 border-0">
+            <img class="card-img-top" src="https://csvt.ru/upload/iblock/64f/o1frc9q41vyi0l8a5jw73wgdz5mopj02.jpg" alt="">
+            <div class="card-img-overlay text-center"><div class="position-absolute bottom-0 start-50 translate-middle-x">AVRORA</div></div>
+        </div>
+        <div class="card img-fluid col-sx-12 col-sm-9 col-md-6 col-lg-2 border-0">
+            <img class="card-img-top" src="https://csvt.ru/upload/iblock/c1e/6e850pf5tfngntrrphuzem3mzyvvodp3.jpg" alt="">
+            <div class="card-img-overlay text-center"><div class="position-absolute bottom-0 start-50 translate-middle-x">HIGHTECH</div></div>
+        </div>
+        <div class="card img-fluid col-sx-12 col-sm-9 col-md-6 col-lg-2 border-0">
+          <img class="card-img-top" src="https://csvt.ru/upload/iblock/4a3/9m6li88qhocg53w7wvadbjq005c34mv7.jpg" alt="">
+          <div class="card-img-overlay text-center"><div class="position-absolute bottom-0 start-50 translate-middle-x">SPARTA</div></div>
+        </div>
+        <div class="card img-fluid col-sx-12 col-sm-9 col-md-6 col-lg-2 border-0">
+            <img class="card-img-top" src="https://csvt.ru/upload/iblock/08c/8sk9qmpmgnxoffqyt07gm71m2yo45cez.jpg" alt="">
+            <div class="card-img-overlay text-center"><div class="position-absolute bottom-0 start-50 translate-middle-x">KROKUS</div></div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="industry" role="tabpanel" aria-labelledby="industry">
+      <div class="row">
+      <div class="card img-fluid col-sx-12 col-sm-9 col-md-6 col-lg-2 border-0">
+          <img class="card-img-top" src="https://csvt.ru/upload/iblock/8b7/a9iqv2ujz6kcy4wbmg3jwz7cucsz45hf.jpg" alt="">
+          <div class="card-img-overlay text-center"><div class="position-absolute bottom-0 start-50 translate-middle-x">LIRA</div></div>
+      </div>
+      <div class="card img-fluid col-sx-12 col-sm-9 col-md-6 col-lg-2 border-0">
+          <img class="card-img-top" src="https://csvt.ru/upload/iblock/8b7/a9iqv2ujz6kcy4wbmg3jwz7cucsz45hf.jpg" alt="">
+          <div class="card-img-overlay text-center"><div class="position-absolute bottom-0 start-50 translate-middle-x">PR</div></div>
+      </div>
+     <div class="card img-fluid col-sx-12 col-sm-9 col-md-6 col-lg-2 border-0">
+          <img class="card-img-top" src="https://csvt.ru/upload/iblock/f3f/plxm5bb0rw2to2qsecn7ar1cieupl3k9.jpg" alt="">
+          <div class="card-img-overlay text-center"><div class="position-absolute bottom-0 start-50 translate-middle-x">ICEBERG</div></div>
+      </div>
+     <div class="card img-fluid col-sx-12 col-sm-9 col-md-6 col-lg-2 border-0">
+          <img class="card-img-top" src="https://csvt.ru/upload/iblock/a80/pmnfv69swc2kfj602ps3axqvyvw6wupr.jpg" alt="">
+          <div class="card-img-overlay text-center"><div class="position-absolute bottom-0 start-50 translate-middle-x">SLIM</div></div>
+      </div>
+     <div class="card img-fluid col-sx-12 col-sm-9 col-md-6 col-lg-2 border-0">
+          <img class="card-img-top" src="https://csvt.ru/upload/iblock/a80/pmnfv69swc2kfj602ps3axqvyvw6wupr.jpg" alt="">
+          <div class="card-img-overlay text-center"><div class="position-absolute bottom-0 start-50 translate-middle-x">SLIM/TUBE</div></div>
+      </div>
+    </div>
+  </div>
+</div><br><br><br><br>
+  <nav class="navbar navbar-expand-md fixed-bottom navbar-dark bg-dark">
+  <div class="container">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Главная</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Каталог</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Оплата и получение</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Контакты</a>
+        </li>
+      </ul>
+  </div>
+</nav>
+</body>
+</html>
