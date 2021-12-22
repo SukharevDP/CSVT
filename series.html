@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Card</title>
+  <title>series</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -58,14 +58,19 @@
 </div>
 <div class="container">
   <div class="row">
-<div class="col-md-5 col-lg-4">
+    <div class="galleria col-md-5 col-lg-4">
+        <img src="https://csvt.ru/upload/iblock/64f/o1frc9q41vyi0l8a5jw73wgdz5mopj02.jpg">
+        <img src="https://csvt.ru/upload/uf/489/0k6ykzfj3rcp05evd2zhozmh3t5thaiu.jpg">
+        <img src="https://csvt.ru/upload/uf/ec8/8g4ukj6jnaqdusmwx5x8s9p8izfxzn3k.jpg">
+    </div>
+<!-- <div class="col-md-5 col-lg-4">
     <img class="img-fluid" src="https://csvt.ru/upload/iblock/64f/o1frc9q41vyi0l8a5jw73wgdz5mopj02.jpg">
     <div class="container">
       <img class="img-thumbnail" style="height: 50px; box-shadow: 1px 1px 3px #000000;" src="https://csvt.ru/upload/iblock/64f/o1frc9q41vyi0l8a5jw73wgdz5mopj02.jpg">
       <img class="img-thumbnail" style="height: 50px; box-shadow: 1px 1px 3px #000000;" src="https://csvt.ru/upload/uf/489/0k6ykzfj3rcp05evd2zhozmh3t5thaiu.jpg">
       <img class="img-thumbnail" style="height: 50px; box-shadow: 1px 1px 3px #000000;" src="https://csvt.ru/upload/uf/ec8/8g4ukj6jnaqdusmwx5x8s9p8izfxzn3k.jpg">
     </div><br>
-  </div>
+  </div> -->
 <div class="col-md-2 col-lg-4">
 </div>
 <div class="col-md-5 col-lg-4 d-flex align-items-end flex-column">
@@ -1772,5 +1777,21 @@
       </ul>
   </div>
 </nav>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/galleria/1.5.7/galleria.min.js"></script>
+<script>
+    (function() {
+        Galleria.loadTheme('https://cdnjs.cloudflare.com/ajax/libs/galleria/1.5.7/themes/classic/galleria.classic.min.js');
+        Galleria.configure({
+          transition: 'fade',
+          imageCrop: true,
+          height: 520,
+          width: 500,
+          lightbox: true,
+          overlayBackground: 'white'
+        });
+        Galleria.run('.galleria');
+        }());
+</script>
 </body>
 </html>
